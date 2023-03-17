@@ -1,0 +1,1682 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+
+
+html {
+    scroll-behavior: smooth
+}
+
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+    border-style: none;
+    font: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html,
+body {
+    min-height: 150vh;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(to bottom, #000000, #120a57, #672626);
+    position: relative;
+}
+
+/* Navbar */
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.nav-links {
+    color: white;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    padding-block: .75em;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    text-align: center;
+    width: 74px;
+}
+
+.nav-links a:hover {
+    font-size: 1.2em;
+}
+
+/* Top */
+
+.top {
+    height: 40rem;
+    width: 100%;
+    position: relative;
+}
+
+.strip {
+    position: absolute;
+    width: 60%;
+    aspect-ratio: 1;
+    left: 32%;
+    top: -2%;
+    z-index: -11;
+    opacity: .5;
+    transform: rotate(45deg);
+    background: linear-gradient(to bottom, #b4b403c7, #097f48ce, #053446);
+}
+
+.BGI {
+    position: absolute;
+    aspect-ratio: 1;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .5;
+}
+
+.BGI1 {
+
+    left: 50%;
+    transform: rotate(10deg);
+    background-image: url(./images/html.png);
+}
+
+.BGI2 {
+
+    top: -5%;
+    left: 0%;
+    transform: rotate(-10deg);
+    background-image: url(./images/css.png);
+}
+
+.BGI3 {
+    top: 40%;
+    right: 7%;
+    transform: rotate(-50deg);
+    background-image: url(./images/JS.png);
+}
+
+.BGI4 {
+    top: 65%;
+    right: 40%;
+    transform: rotate(30deg);
+    background-image: url(./images/node.png);
+}
+
+.BGI5 {
+    bottom: -10%;
+    left: 12%;
+    transform: rotate(15deg);
+
+    background-image: url(./images/photoshop.png);
+}
+
+.BGI6 {
+    top: 48%;
+    right: 15%;
+    transform: rotate(-15deg);
+    background-image: url(./images/premiere.png);
+}
+
+.BGI7 {
+    top: -15%;
+    left: 2%;
+    transform: rotate(-25deg);
+    background-image: url(./images/after.png);
+}
+
+
+.intro {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+
+}
+
+.intro h1 {
+    position: relative;
+    right: 120%;
+    font-size: 4.5em;
+    line-height: 1.4em;
+    color: aliceblue;
+    animation: musk 1s ease-in-out .5s 1 forwards;
+
+}
+
+.intro span {
+    font-size: 1.5em;
+    color: rgb(123, 191, 218);
+}
+
+.intro span:nth-of-type(2) {
+    font-size: 1.2em;
+
+}
+
+.MElon {
+    width: 768px;
+    position: absolute;
+    right: -90%;
+    height: 40rem;
+    border-radius: 10% 10% 50% 30%;
+    background-image: url(./images/MElon.png);
+    background-size: cover;
+    animation: musk 1s ease-in-out .5s 1 forwards;
+}
+
+@keyframes musk {
+    from {}
+
+    to {
+        right: 0%;
+    }
+}
+
+.MElon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 80% 10% 55% 30%;
+    background: linear-gradient(to bottom, #171827, #5e0849, #da416c);
+}
+
+.eye {
+    position: absolute;
+    background: black;
+    width: 3.5%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.eye::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 39%;
+    left: 36%;
+}
+
+.eye1 {
+    left: 46.65%;
+    top: 34%;
+}
+
+.eye2 {
+    top: 32.7%;
+    left: 57.2%;
+}
+
+.mid {
+    width: 100%;
+}
+
+.aboutMe {
+    position: relative;
+    left: -100%;
+    transition: left .5s ease-in-out;
+    display: flex;
+    height: 40rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutMePara {
+    width: 35rem;
+
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    letter-spacing: .05em;
+
+    font-size: 2.3em;
+    margin-right: 2em;
+}
+
+.aboutMeImg {
+    width: 35rem;
+    height: 32rem;
+    background-image: url(./images/deskMan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skills {
+    position: relative;
+    left: -100%;
+    transition: left .5s ease-in-out;
+    margin-top: 1em;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.skillsInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding-block: 1em;
+    padding-inline: 3em 0;
+    align-items: center;
+    width: 70rem;
+
+}
+
+.skillsText {
+    width: 28rem;
+    color: white;
+    letter-spacing: .05em;
+    font-weight: 500;
+    font-size: 2.6em;
+}
+
+.percentage {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.percentageNav {
+    padding-block: 1em;
+}
+
+.perNavLinks {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.4em;
+}
+
+.perNavLinks li:hover {
+    border-bottom: 1px solid aqua;
+    cursor: pointer;
+}
+
+.perNavLinks .active {
+    border-bottom: 1px solid white;
+}
+
+.percentageBars {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    place-items: center;
+}
+
+.svgOuter {
+    position: relative;
+    border-radius: 50%;
+}
+
+.svgText {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.svg {
+    width: 200px;
+    aspect-ratio: 1;
+    display: inline-block;
+    stroke: rgb(195, 255, 75);
+    stroke-width: 4px;
+    fill: #000000;
+    stroke-dasharray: 2px 700px;
+    transform: rotate(-90deg);
+    animation: moj 2s ease-in-out .3s 1 forwards;
+}
+
+.mojFirst {
+    animation: moj2 2.3s ease-in-out .3s 1 forwards;
+}
+
+@keyframes moj {
+    from {
+        stroke-dasharray: 2px 700px;
+    }
+
+    to {
+        stroke-dasharray: var(--num) 700px;
+    }
+}
+
+@keyframes moj2 {
+    from {
+        stroke-dasharray: 2px 700px;
+    }
+
+    to {
+        stroke-dasharray: var(--num) 700px;
+    }
+}
+
+
+.JS,
+.authentication {
+    grid-column: 1/3;
+    justify-self: center;
+}
+
+.JS .svgText,
+.node .svgText,
+.API .svgText,
+.DSA .svgText,
+.photoshop .svgText {
+    font-size: 1.7em;
+}
+
+.authentication .svgText,
+.premiere .svgText {
+    font-size: 1.4em;
+}
+
+.appetite .svgText {
+    font-size: 1.4em;
+
+}
+
+
+
+.hireMe {
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    right: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/hireMe2.png);
+}
+
+.projectsShell,
+.skillsShell,
+.aboutMeShell {
+    position: relative;
+}
+
+.projects {
+    position: relative;
+    left: -100%;
+    transition: left .5s ease-in-out;
+    width: 100%;
+    height: 40rem;
+}
+
+.projectsText {
+    position: relative;
+    top: 10rem;
+    left: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 3em;
+    width: 25rem;
+
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+
+* {
+    -ms-overflow-style: none;
+}
+
+
+
+
+
+.education {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    gap: 4em;
+    margin-top: 1em;
+}
+
+.eduText {
+    width: 30rem;
+    color: rgb(253, 231, 231);
+    font-size: 2em;
+}
+
+.cvButton button {
+    color: white;
+    font-size: 3em;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: .5em 1em;
+}
+
+.downloadBtn:hover {
+    cursor: pointer;
+    color: rgb(42, 122, 250);
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding-block: .5em;
+    font-size: 1.5em;
+}
+
+.footerUpper {
+    display: flex;
+    gap: 1.5em;
+}
+
+.footerBottom {
+    font-size: .9em;
+    color: rgba(135, 233, 235, 0.678);
+}
+
+.socials {
+    display: flex;
+    align-items: flex-start;
+    gap: .5em;
+}
+
+
+
+.github {
+    background-image: url(./images/git.png);
+    display: inline-block;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.linkedin {
+    background-image: url(./images/link.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+
+
+.DmainBox {
+    width: max-content;
+    background-color: purple;
+    position: absolute;
+    top: 8%;
+    right: 7%;
+}
+
+
+.Dbox {
+    width: 50rem;
+    background-color: rgba(4, 4, 35, 0.331);
+}
+
+.DanimR {
+    transform-origin: right;
+    animation: .2s linear 0s slider;
+}
+
+.DanimL {
+    transform-origin: left;
+    animation: .2s linear 0s slider;
+}
+
+@keyframes slider {
+    from {
+        transform: scaleX(.01);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+
+.DrightSlider,
+.DleftSlider {
+    content: '';
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(49, 49, 49);
+    position: absolute;
+    top: 45%;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.DleftSlider {
+    left: -9px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.DrightSlider {
+    right: -9px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+
+}
+
+
+.Dtext {
+    display: flex;
+    background: linear-gradient(.25turn, rgba(8, 4, 71, 0.895), rgba(50, 0, 0, 0.88));
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5em;
+    padding-block: .5em;
+}
+
+.Dtext span {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(75, 225, 182);
+}
+
+.Dtext p {
+    color: white;
+}
+
+.DgitLinks a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #7871ff;
+}
+
+.DgitLinks {
+    display: flex;
+    gap: 1em;
+}
+
+
+
+@media(max-width:1400px) {
+    .BGI {
+        width: 280px;
+    }
+
+    .strip {
+        top: -1%;
+    }
+
+    .intro h1 {
+        font-size: 4em;
+
+    }
+
+    .skillsInner {
+        width: 60rem;
+    }
+
+    .hireMe {
+        right: 0%;
+    }
+
+
+
+
+
+    .Dbox {
+        width: 45rem;
+    }
+}
+
+@media(max-width:1300px) {
+    .BGI {
+        width: 275px;
+    }
+
+    .intro h1 {
+        font-size: 3.2em;
+
+    }
+
+    .MElon {
+        width: 668px;
+    }
+
+    .eye1 {
+        left: 54.2%;
+        top: 33.5%;
+    }
+
+    .eye2 {
+        top: 32.7%;
+        left: 66.2%;
+    }
+
+    .skillsInner {
+        width: 55rem;
+    }
+
+    .skillsText {
+        width: 20rem;
+        font-size: 2.2em;
+    }
+
+    .percentage {
+        width: 27rem;
+    }
+
+    .aboutMePara {
+        margin-right: 1em;
+    }
+
+    .DmainBox {
+        right: 2%;
+    }
+
+}
+
+@media(max-width:1175px) {
+    .BGI {
+        width: 240px;
+    }
+
+    .strip {
+        left: 30%;
+        top: 1%;
+    }
+
+    .MElon {
+        width: 568px;
+    }
+
+    .eye1 {
+        left: 64%;
+        top: 33.5%;
+    }
+
+    .eye2 {
+        top: 32.7%;
+        left: 77.5%;
+    }
+
+    .aboutMe {
+        padding-top: 3em;
+        height: 32rem;
+    }
+
+    .aboutMePara {
+        width: 30rem;
+        font-size: 1.8em;
+    }
+
+    .aboutMeImg {
+        width: 30rem;
+        height: 21rem;
+    }
+
+    .skills {
+        height: 30rem;
+    }
+
+    .skillsInner {
+        width: 70%;
+    }
+
+    .percentage {
+        width: 23rem;
+    }
+
+    .skillsText {
+        width: 17rem;
+        font-size: 2em;
+    }
+
+    .svg {
+        width: 150px;
+    }
+
+    .JS .svgText,
+    .node .svgText,
+    .API .svgText,
+    .DSA .svgText,
+    .photoshop .svgText {
+        font-size: 1.5em;
+    }
+
+    .authentication .svgText,
+    .premiere .svgText {
+        font-size: 1.2em;
+    }
+
+    .appetite .svgText {
+        font-size: 1.4em;
+
+    }
+
+    .projects {
+        height: 30rem;
+    }
+
+    .carousel {
+        width: 32rem;
+        height: 24rem;
+    }
+
+    .projectsText {
+        font-size: 2.8em;
+    }
+
+    .eduText {
+        width: 27rem;
+        font-size: 1.7em;
+    }
+
+    .cvButton button {
+
+        font-size: 2em;
+        border-radius: 5px;
+        padding: .5em 1em;
+    }
+
+
+
+    .education {
+        height: 15rem;
+        gap: 3em;
+    }
+
+    footer {
+        height: 7rem;
+        font-size: 1.2em;
+    }
+
+
+
+
+    .Dbox {
+        width: 35rem;
+    }
+
+
+
+}
+
+@media(max-width:1000px) {
+    .BGI {
+        width: 210px;
+    }
+
+    .BGI1 {
+        width: 190px;
+        top: 2%;
+        left: 40%;
+    }
+
+    .BGI3 {
+        width: 220px;
+        top: 50%;
+        right: 2%;
+    }
+
+    .BGI4 {
+        width: 190px;
+        top: 75%;
+        right: 38%;
+    }
+
+    .BGI5 {
+        bottom: -10%;
+        left: 12%;
+    }
+
+    .BGI6 {
+        top: 54%;
+        right: 22%;
+    }
+
+    .BGI7 {
+        top: -15%;
+        left: 2%;
+        transform: rotate(-25deg);
+        background-image: url(./images/after.png);
+    }
+
+    .strip {
+        top: 0%;
+    }
+
+    .top {
+        height: 30rem;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .MElon {
+        width: 468px;
+        height: 30rem;
+    }
+
+    .eye1 {
+        left: 57.5%;
+        top: 34%;
+    }
+
+    .eye2 {
+        top: 32.7%;
+        left: 70.5%;
+    }
+
+    .aboutMePara {
+        width: 25rem;
+        font-size: 1.5em;
+    }
+
+    .aboutMeImg {
+        width: 26rem;
+        height: 18.2rem;
+    }
+
+    .skills {
+        height: 40rem;
+    }
+
+    .skillsInner {
+        flex-direction: column;
+        align-self: center;
+        padding-inline: 0;
+
+    }
+
+    .skillsText {
+        width: 24rem;
+        text-align: center;
+    }
+
+    .percentage {
+        width: 28rem;
+    }
+
+    .svg {
+        width: 140px;
+    }
+
+    .authentication .svgText,
+    .premiere .svgText {
+        font-size: 1.1em;
+    }
+
+    .JS .svgText {
+        font-size: 1.3em;
+    }
+
+
+    .projectsText {
+        top: 8rem;
+        width: 14rem;
+        font-size: 2.4em;
+    }
+
+    .eduText {
+        width: 20rem;
+        font-size: 1.5em;
+    }
+
+    .cvButton button {
+        font-size: 1.8em;
+    }
+
+    .education {
+        height: 12rem;
+        gap: 2em;
+    }
+
+
+
+
+    .Dbox {
+        width: 30rem;
+    }
+
+    .Dtext span {
+        font-size: 1.2em;
+    }
+
+    .DgitLinks a {
+        font-size: 1.1em;
+    }
+
+
+
+    .DmainBox::after,
+    .DmainBox::before {
+        width: 50px;
+        height: 50px;
+        top: 42%;
+    }
+
+
+
+    .DleftSlider,
+    .DrightSlider {
+        top: 42%;
+        width: 50px;
+        height: 50px;
+    }
+
+
+}
+
+@media(max-width:800px) {
+    .BGI {
+        width: 180px;
+    }
+
+    .BGI1 {
+
+        left: 50%;
+    }
+
+    .BGI2 {
+
+        top: -5%;
+        left: 0%;
+
+    }
+
+    .BGI3 {
+        top: 40%;
+        right: 0%;
+    }
+
+    .BGI4 {
+        top: 80%;
+        right: 30%;
+    }
+
+    .BGI5 {
+        top: 0%;
+        left: 80%;
+    }
+
+    .BGI6 {
+        top: 58%;
+        right: 25%;
+    }
+
+
+    .BGI7 {
+        left: 5%;
+
+    }
+
+    .strip {
+        top: 1%;
+
+    }
+
+    .intro h1 {
+        font-size: 2.2em;
+    }
+
+    .top {
+        height: 25rem;
+    }
+
+    .MElon {
+        width: 368px;
+        height: 25rem;
+    }
+
+    .eye1 {
+        left: 61.4%;
+        top: 34.6%;
+    }
+
+    .eye2 {
+        top: 33%;
+        left: 75%;
+    }
+
+    .aboutMe {
+        padding-top: 1em;
+        height: 25rem;
+    }
+
+    .aboutMePara {
+        width: 20rem;
+        font-size: 1.3em;
+    }
+
+    .aboutMeImg {
+        width: 23rem;
+        height: 16.1rem;
+    }
+
+    .skills {
+        height: 40rem;
+    }
+
+    .skillsInner {
+        align-items: flex-start;
+        padding-left: 2rem;
+
+    }
+
+    .skillsText {
+        width: 24rem;
+        font-size: 1.5em;
+
+    }
+
+    .percentage {
+        width: 24rem;
+    }
+
+
+    .JS .svgText {
+        font-size: 1.2em;
+    }
+
+    .hireMe {
+        width: 16rem;
+        height: 24rem;
+    }
+
+    .projects {
+        height: 35rem;
+    }
+
+    .projectsText {
+        top: 0rem;
+        margin-inline: auto;
+        left: 0;
+        font-size: 2em;
+        width: 20rem;
+        text-align: center;
+    }
+
+
+    .svgText {
+        font-size: 1.5em;
+    }
+
+    .node .svgText,
+    .API .svgText,
+    .DSA .svgText,
+    .photoshop .svgText {
+        font-size: 1.3em;
+    }
+
+    .authentication .svgText,
+    .premiere .svgText {
+        font-size: 1em;
+    }
+
+    .appetite .svgText {
+        font-size: 1.2em;
+    }
+
+    .DmainBox {
+        position: relative;
+        right: 0;
+    }
+
+    .Dshell {
+        padding-top: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .Dbox {
+        width: 35rem;
+    }
+
+    .Dtext span {
+        font-size: 1.2em;
+    }
+
+    .DgitLinks a {
+        font-size: 1.1em;
+    }
+
+}
+
+@media(max-width:650px) {
+    .BGI {
+        width: 160px;
+    }
+
+    .BGI1 {
+
+        left: 2%;
+    }
+
+    .BGI4 {
+        top: 90%;
+        right: 10%;
+    }
+
+    .BGI5 {
+        top: -3%;
+        left: 76%;
+    }
+
+    .BGI6 {
+        top: 58%;
+        right: 5%;
+        transform: rotate(-15deg);
+        background-image: url(./images/premiere.png);
+    }
+
+    .BGI7 {
+        top: -15%;
+        left: 0;
+        transform: rotate(-25deg);
+        background-image: url(./images/after.png);
+    }
+
+    .strip {
+        top: 1%;
+        left: 33%;
+        width: 50%;
+    }
+
+    .spHide {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .nav-links {
+        max-width: fit-content;
+        gap: 0;
+    }
+
+    .nav-links li {
+        margin-right: 3em;
+    }
+
+    .nav-links li:nth-of-type(1) {
+        width: 0;
+    }
+
+    .nav-links li:nth-of-type(1),
+    .nav-links li:nth-of-type(5) {
+        margin-right: 0;
+    }
+
+    .intro {
+        top: 5%;
+        left: 7%;
+    }
+
+    .top {
+        height: 30rem;
+    }
+
+    .MElon {
+        top: 20%;
+        width: 300px;
+        height: 20rem;
+    }
+
+    .eye1 {
+        left: 60.4%;
+        top: 34.6%;
+    }
+
+    .eye2 {
+        top: 33%;
+        left: 73.8%;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+        height: 30rem;
+        justify-content: flex-start;
+        gap: 2em;
+    }
+
+    .aboutMePara {
+        width: 22rem;
+        font-size: 1.3em;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .aboutMeImg {
+        width: 20rem;
+        margin-left: 1.4em;
+    }
+
+    .skills {
+        height: 40rem;
+    }
+
+    .skillsInner {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    .skillsText {
+        width: 24rem;
+        font-size: 1.5em;
+
+    }
+
+    .percentage {
+        width: 24rem;
+    }
+
+    .hireMe {
+        display: none;
+        width: 16rem;
+        height: 24rem;
+    }
+
+
+
+    .eduText {
+        width: 15rem;
+        font-size: 1.2em;
+    }
+
+    .cvButton button {
+        font-size: 1.4em;
+    }
+
+    .education {
+        height: 10rem;
+        gap: 3em;
+    }
+
+    footer {
+        height: 7rem;
+        font-size: 1em;
+    }
+
+    .github,
+    .linkedin {
+        width: 24px;
+    }
+
+
+
+    .Dbox {
+        width: 27rem;
+    }
+
+}
+
+@media(max-width:500px) {
+    .BGI {
+        width: 120px;
+    }
+
+    .BGI3 {
+        top: 25%;
+    }
+
+    .BGI4 {
+        top: 95%;
+        right: 2%;
+    }
+
+    .BGI6 {
+        top: 65%;
+    }
+
+    .BGI7 {
+        top: -25%;
+        left: 1%;
+    }
+
+    .strip {
+        width: 70%;
+        top: -3%;
+        left: 12%;
+        transform: rotate(55deg);
+        aspect-ratio: 3/7;
+    }
+
+    .nav-links li {
+        margin-right: 2.5em;
+    }
+
+    .intro {
+        top: 4%;
+    }
+
+
+    .MElon {
+        top: 32%;
+    }
+
+
+    .aboutMe {
+        flex-direction: column-reverse;
+        height: 30rem;
+        justify-content: flex-start;
+        gap: 2em;
+    }
+
+    .aboutMePara {
+        width: 20rem;
+    }
+
+
+    .skillsText {
+        width: 20rem;
+        font-size: 1.4em;
+
+    }
+
+    .percentage {
+        width: 21rem;
+    }
+
+
+    .projects {
+        height: 28rem;
+    }
+
+
+
+    .education {
+        flex-direction: column;
+        height: 15rem;
+        gap: 1.5em;
+    }
+
+    .eduText {
+        width: 20rem;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .footerUpper {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2em;
+    }
+
+    .Dbox {
+        width: 20rem;
+    }
+
+    .Dtext span {
+        font-size: 1.1em;
+    }
+
+    .Dtext p {
+        font-size: .9em;
+    }
+
+    .DgitLinks a {
+        font-size: 1em;
+    }
+
+    .DmainBox::after,
+    .DmainBox::before {
+        width: 40px;
+        height: 40px;
+        top: 42%;
+    }
+
+    .DleftSlider,
+    .DrightSlider {
+        top: 42%;
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media(max-width:350px) {
+    .BGI {
+        width: 100px;
+    }
+
+    .strip {
+        width: 75%;
+        top: -4%;
+        left: 8%;
+        transform: rotate(55deg);
+        aspect-ratio: 3/7;
+    }
+
+    .nav-links li {
+        margin-right: 1.4em;
+    }
+
+    .intro {
+        top: 4%;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .top {
+        height: 30rem;
+    }
+
+    .MElon {
+        width: 250px;
+        height: 15rem;
+        top: 32%;
+    }
+
+    .eye1 {
+        left: 53.4%;
+        top: 34.6%;
+    }
+
+    .eye2 {
+        top: 33%;
+        left: 65.8%;
+    }
+
+    .aboutMePara {
+        width: 15rem;
+        font-size: 1.3em;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .aboutMeImg {
+        width: 15rem;
+        margin-left: .8em;
+    }
+
+    .skills {
+        height: 30rem;
+    }
+
+    .skillsText {
+        width: 15rem;
+        font-size: 1.3em;
+
+    }
+
+    .percentage {
+        width: 17rem;
+    }
+
+    .svg {
+        width: 110px;
+    }
+
+    .JS .svgText {
+        font-size: 1em;
+    }
+
+    .premiere .svgText,
+    .authentication .svgText {
+        font-size: .9em;
+    }
+
+    .appetite .svgText {
+        font-size: 1em;
+    }
+
+    .node .svgText,
+    .API .svgText {
+        font-size: 1.15em;
+    }
+
+
+    .projects {
+        height: 28rem;
+    }
+
+    .projectsText {
+        width: 15rem;
+    }
+
+    .eduText {
+        width: 16rem;
+        font-size: 1.2em;
+    }
+
+    .cvButton button {
+        font-size: 1.2em;
+    }
+
+    .education {
+        height: 12rem;
+        gap: 1em;
+    }
+
+    footer {
+        height: 7rem;
+        font-size: 1em;
+    }
+
+
+    .Douterbox {
+        width: 16rem;
+    }
+
+    .Dslide {
+        width: 16rem;
+    }
+
+    .Dbox {
+        width: 16rem;
+    }
+
+    .Dtext span {
+        font-size: 1.1em;
+    }
+
+    .Dtext p {
+        font-size: .9em;
+    }
+
+    .DgitLinks a {
+        font-size: 1em;
+    }
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    left: 0%;
+    transition: left 1s ease-in-out;
+
+}
