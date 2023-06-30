@@ -101,6 +101,8 @@ let arrayOfSlides = [
     , document.querySelector('#slide4')
     , document.querySelector('#slide5')
     , document.querySelector('#slide6')
+    , document.querySelector('#slide7')
+    , document.querySelector('#slide8')
 ]
 
 const slideAssign = (counter, Danim) => {
