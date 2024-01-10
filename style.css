@@ -818,6 +818,10 @@ footer {
         width: 150px;
     }
 
+    .svgText {
+        font-size: 1.6em;
+    }
+
     .JS .svgText,
     .node .svgText,
     .API .svgText,
@@ -1182,7 +1186,7 @@ footer {
 
 
     .svgText {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .node .svgText,
@@ -1598,7 +1602,9 @@ footer {
         width: 110px;
     }
 
-    .JS .svgText {
+
+    .JS .svgText,
+    .HTML .svgText {
         font-size: 1em;
     }
 
